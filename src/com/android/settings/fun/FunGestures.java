@@ -14,7 +14,7 @@
 * limitations under the License.
 */
  
- package com.android.settings.candy;
+ package com.android.settings.fun;
  
  import android.content.Intent;
  import android.content.pm.PackageManager;
@@ -34,7 +34,7 @@
  
      @Override
      protected int getMetricsCategory() {
-         return MetricsEvent.Fun;
+         return MetricsEvent.FUN;
      }
  
      @Override
