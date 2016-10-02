@@ -126,7 +126,7 @@
 
         <activity android:name=".Settings$WirelessSettings"
             android:label="@string/header_category_wireless_networks">
-            <intent-filter android:priority="5">
+            <intent-filter android:priority="6">
                 <action android:name="com.android.settings.category.wireless" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -134,8 +134,16 @@
 
         <activity android:name=".Settings$PersonalizationSettings"
             android:label="@*org.slim.framework:string/settings_header_category_personalization">
-            <intent-filter android:priority="4">
+            <intent-filter android:priority="5">
                 <action android:name="com.android.settings.category.personalization" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Settings$FunInterface"
+            android:label="@string/header_category_fun">
+            <intent-filter android:priority="4">
+                <action android:name="com.android.settings.category.fun" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -183,6 +191,38 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
+        <activity android:name="Settings$FunInterfaceActivity"
+                android:label="@string/fun_interface_title"
+                android:icon="@drawable/ic_fun_interface"
+                android:taskAffinity="">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.android.settings.SHORTCUT" />
+            </intent-filter>
+            <intent-filter android:priority="3">
+                <action android:name="com.android.settings.action.SETTINGS" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.category"
+                android:value="com.android.settings.category.fun" />
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.fun.ProcessStatsSummary" />
+        </activity>
+ 
+       <!-- Keep compatibility with old shortcuts. -->
+        <activity android:name="Settings$FunInterfaceActivity"
+            android:label="@string/fun_interface_title"
+            android:taskAffinity="">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.fun.FunInterface" />
+        </activity>
+
+        <activity
+             android:name=".fun.FunInterface" />
 
         <!-- Wireless Controls -->
 
