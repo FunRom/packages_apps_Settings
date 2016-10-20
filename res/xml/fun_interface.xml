@@ -11,6 +11,13 @@
 	        android:title="@string/volume_rocker_settings_title"
 	        />
 
+<!-- Gestures -->
+       <PreferenceScreen
+          android:id="@+id/gestures"
+          android:fragment="com.android.settings.fun.FunGestures"
+          android:title="@string/gestures_title" />
+
+<!-- network traffic -->
        <PreferenceScreen
             android:key="nettraffic_settings"
             android:fragment="com.android.settings.fun.NetworkTrafficSettings"
