@@ -11,12 +11,11 @@
           android:title="@string/battery_bar"
         /> 
 
-<!-- volume rocker -->
-        <PreferenceScreen
-	        android:id="@+id/button_settings"
-	        android:fragment="com.android.settings.fun.VolumeRockerSettings"
-	        android:title="@string/volume_rocker_settings_title"
-	        />
+<!-- Dashboard Options -->
+       <PreferenceScreen
+          android:id="@+id/dashboard_options"
+          android:fragment="com.android.settings.fun.FunDashboardOptions"
+          android:title="@string/dashboard_category" />
 
 <!-- Gestures -->
        <PreferenceScreen
@@ -30,4 +29,12 @@
             android:fragment="com.android.settings.fun.NetworkTrafficSettings"
             android:title="@string/nettraffic_settings_title"
             />
+
+<!-- volume rocker -->
+        <PreferenceScreen
+	        android:id="@+id/button_settings"
+	        android:fragment="com.android.settings.fun.VolumeRockerSettings"
+	        android:title="@string/volume_rocker_settings_title"
+	        />
+
 </PreferenceScreen>
