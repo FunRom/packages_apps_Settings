@@ -64,8 +64,7 @@
     <string name="battery_bar_animate_title">Charging animation</string>
     <string name="battery_bar_animate_summary">The charging animation may result in a poor user experience. Enable at your own discretion.</string>
 
-    <!-- Manage applications: show substratum overlays -->
-    <string name="filter_substratum_apps">Substratum overlays</string>
+    <!-- Manage applications: Substratum overlays -->
     <string name="menu_show_substratum">Show overlays</string>
     <string name="menu_hide_substratum">Hide overlays</string>
 </resources>
