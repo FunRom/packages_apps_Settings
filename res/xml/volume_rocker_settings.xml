@@ -15,5 +15,22 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/volume_rocker_settings_title">
 
+   <SwitchPreference
+       android:key="swap_volume_buttons"
+       android:title="@string/swap_volume_buttons_title"
+       android:summary="@string/swap_volume_buttons_summary" />
 
+   <com.android.settings.preference.SystemSettingSwitchPreference
+       android:key="volume_rocker_music_controls"
+       android:summary="@string/volume_rocker_music_controls_summary"
+       android:title="@string/volume_rocker_music_controls_title"
+       android:defaultValue="false"
+       android:dependency="volume_rocker_wake" />
+
+   <com.android.settings.preference.SystemSettingSwitchPreference
+       android:key="volume_rocker_wake"
+       android:summary="@string/volume_rocker_wake_summary"
+       android:title="@string/volume_rocker_wake_title"
+       android:defaultValue="false"
+       android:disableDependentsState="true" />
 </PreferenceScreen>

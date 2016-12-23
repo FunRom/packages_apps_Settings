@@ -10,5 +10,5 @@
 	    android:fragment="com.android.settings.fun.VolumeRockerSettings"
 	    android:title="@string/volume_rocker_settings_title"
 	    />
- 
+
 </PreferenceScreen>
