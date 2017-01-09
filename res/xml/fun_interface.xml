@@ -11,6 +11,13 @@
           android:title="@string/battery_bar"
         /> 
 
+<!-- Clock Settings -->
+       <PreferenceScreen
+          android:fragment="com.android.settings.fun.ClockSettings"
+          android:key="flash_clock_settings"
+          android:title="@string/clock_settings_title"
+          android:summary="@string/clock_settings_summary" />
+
 <!-- Dashboard Options -->
        <PreferenceScreen
           android:id="@+id/dashboard_options"
