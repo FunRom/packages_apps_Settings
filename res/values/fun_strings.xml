@@ -50,6 +50,10 @@
     <string name="network_traffic_hidearrow_summary">Hide the network traffic indicator arrows</string>
     <!-- Geasture settings -->
     <string name="gestures_title">Gestures</string>
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_title">Lockscreen</string>
+    <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
+    <string name="lockscreen_battery_info_summary">Display negociated charger max current and voltage and battery temperature on lockscreen while charging</string>
     <!-- tap-to-sleep -->
     <string name="double_tap_to_sleep_title">Tap statusbar to sleep</string>
     <string name="double_tap_to_sleep_summary">Double tap status bar to put device to sleep</string>

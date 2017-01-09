@@ -30,6 +30,12 @@
           android:fragment="com.android.settings.fun.FunGestures"
           android:title="@string/gestures_title" />
 
+<!-- Lockscreen -->
+       <PreferenceScreen
+          android:id="@+id/lockscreen"
+          android:fragment="com.android.settings.fun.FunLockScreen"
+          android:title="@string/lockscreen_title" />
+
 <!-- network traffic -->
        <PreferenceScreen
             android:key="nettraffic_settings"
